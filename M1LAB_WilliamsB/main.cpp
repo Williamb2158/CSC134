@@ -35,7 +35,7 @@ int main() {
 
   cout << "The total price for all of the " << endl;
   cout << "apples in stock is $" << totalPrice;
-  cout << "." << endl;
+  cout << ".00." << endl;
 
   return 0;
 }
