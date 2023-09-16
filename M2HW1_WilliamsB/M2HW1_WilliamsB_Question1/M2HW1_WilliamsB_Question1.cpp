@@ -7,9 +7,9 @@ using namespace std;
 /*
 
 CSC 134
-M2HW1 -
+M2HW1 - Question 1
 Brian M. Williams
-09/13/2023
+09/16/2023
 
 Question 1:
  - Write a program that simulates banking transactions:
@@ -94,18 +94,6 @@ int main() {
     cout << "Welcome, " << fname << " " << lname << "!" << endl;
     cout << "Your account number is: " << userBankAccountNum << endl;
     cout << "Your account balance is: $" << fixed << setprecision(2) << account_balance << endl;
-
-
-
-
-
-
-
-
-
-
-
-
 
 return 0;
 }

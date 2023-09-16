@@ -7,15 +7,19 @@ using namespace std;
 /*
 
 CSC 134
-M2LAB1 - Calculate the volume of a cube with updates
+M2HW1 Question 2 - Calculate the volume of a cube with updates
 Brian M. Williams
-09/13/2023
+09/16/2023
 
 Program must calculate:
  - Volume (in cubic feet)
  - Cost
  - Customer Price
  - Profit of any crate GCI builds
+
+ -09/16/2023
+    - updated cost/ft3 to 0.3
+    - updated charge/ft3 to 0.52
 
 */
 
@@ -27,6 +31,12 @@ double length; //in feet
 double width; //in feet
 double height; //in feet
 
+// New values input for variables (cost/ft3) and (charge/ft3) on 09/16/2023.
+
+    cost_per_cubic_foot = 0.3;
+    charge_per_cubic_foot = 0.52;
+
+// End new value input.
 
     cout << "Please enter the length of the box in feet." << endl;
     cin >> length;
