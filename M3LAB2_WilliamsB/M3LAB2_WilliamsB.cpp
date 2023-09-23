@@ -91,9 +91,31 @@ return 0;
 
 void pushButton() {
 
-
+    string secondButton;
     cout << "CHARLEY HAS CHOSEN TO PUSH THE BUTTON!" << endl;
-    cout << "Charley has received $10,000 and a trip to Fiji today!" << endl;
+    cout << "Charley has received $10,000 and a trip to Fiji!" << endl;
+
+
+do
+ {
+     cout << "But, would you like to try for 'Double or nothing?" << endl;
+        getline(cin, secondButton);
+
+    if (secondButton == "yes" || secondButton == "Yes" || secondButton == "YES")
+    {
+        cout << "Behind that curtain, you will find a parachute and a briefcase." << endl;
+        cout << "If you can successfully base jump the Grand Canyon with a briefcase filled with $100,000 you get to keep it. Tax Free." << endl;
+    }
+    else if (secondButton == "no" || secondButton == "No" || secondButton == "NO")
+    {
+        cout << "We can't blame you for taking your $10,000 ball and going home. Enjoy Fiji!" << endl;
+    }
+    else
+    {
+        cout << "Charley, we're going to need a 'yes' or 'no' again." << endl;
+    }
+
+ }  while (secondButton != "yes" && secondButton != "Yes" && secondButton != "YES" && secondButton != "no" && secondButton != "No" && secondButton != "NO");
 
 
 }
