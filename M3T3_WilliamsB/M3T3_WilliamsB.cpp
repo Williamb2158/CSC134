@@ -69,28 +69,28 @@ do {
 
         cout << "" << endl;
 
-        if (cin.fail())
-        {
-            cout << "Error: Selection failed. Please try again by selecting one of the previous options." << endl;
-            cout << "" << endl;
-        }
-        else if (userChoice == "Option 1" || userChoice == "Option1" || userChoice == "option 1" || userChoice == "option1" || userChoice == "1")
-        {
-            option1();
-        }
-        else if (userChoice == "Option 2" || userChoice == "Option2" || userChoice == "option 2" || userChoice == "option2" || userChoice == "2")
-        {
-            option2();
-        }
-        else if (userChoice == "Option 3" || userChoice == "Option3" || userChoice == "option 3" || userChoice == "option3" || userChoice == "3")
-        {
-            option3();
-        }
-        else
-        {
-            cout << "Please enter option 1, option 2, or option 3." << endl;
-            cout << "" << endl;
-        }
+            if (cin.fail())
+            {
+                cout << "Error: Selection failed. Please try again by selecting one of the previous options." << endl;
+                cout << "" << endl;
+            }
+            else if (userChoice == "Option 1" || userChoice == "Option1" || userChoice == "option 1" || userChoice == "option1" || userChoice == "1")
+            {
+                option1();
+            }
+            else if (userChoice == "Option 2" || userChoice == "Option2" || userChoice == "option 2" || userChoice == "option2" || userChoice == "2")
+            {
+                option2();
+            }
+            else if (userChoice == "Option 3" || userChoice == "Option3" || userChoice == "option 3" || userChoice == "option3" || userChoice == "3")
+            {
+                option3();
+            }
+            else
+            {
+                cout << "Please enter option 1, option 2, or option 3." << endl;
+                cout << "" << endl;
+            }
 
 
     } while (userChoice != "Option 1" && userChoice != "Option1" && userChoice != "option 1" && userChoice != "option1" && userChoice != "1"
@@ -101,6 +101,8 @@ do {
 
 return 0;
 }
+
+// User choice functions for each menu option.
 
 void option1()
 {
@@ -116,3 +118,5 @@ void option3()
 {
     cout << "User has selected option 3." << endl;
 }
+
+// End user choice function for each menu option.
