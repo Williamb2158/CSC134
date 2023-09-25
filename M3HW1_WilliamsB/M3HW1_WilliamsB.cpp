@@ -16,8 +16,8 @@ Brian M. Williams
 
 void question1();
 void question2();
-//void question3();
-//void question4();
+void question3();
+void question4();
 
 int main()
 {
@@ -65,7 +65,7 @@ int main()
                 {
                     question2();
                 }
-                /*else if (choice == "3")
+                else if (choice == "3")
                 {
                     question3();
                 }
@@ -73,7 +73,7 @@ int main()
                 {
                     question4();
                 }
-                */
+
                 else
                 {
                     cout << "Please only enter one of the previous selections listed above." << endl;
@@ -142,10 +142,13 @@ void question2()
         cout << "Please enter '1' if you will be dining in today, and enter '2' if you will be ordering takeaway." << endl;
         cout << "" << endl;
 
-        cin >> takeAway;
-        cout << "" << endl;
+
 
     do {
+
+            cin >> takeAway;
+            cout << "" << endl;
+
             if (cin.fail())
             {
                 cout << "Error: Please try again." << endl;
@@ -177,4 +180,95 @@ void question2()
                 cout << "" << endl;
             }
        } while (takeAway != 1 && takeAway != 2);
+}
+
+void question3()
+{
+
+    string choice1;
+
+    cout << "Question 3: Choose your own adventure game" << endl;
+    cout << "" << endl;
+
+        cout << "Welcome to ''Swamp Monsters'', where today you will try to escape the swamp!" << endl;
+        cout << "" << endl;
+
+            cout << "You enter the swamp and are presented with a fork in the road." << endl;
+            cout << "" << endl;
+            cout << "There is a sign in the center of the fork that says, ''A right choice takes you to safety and a wrong choice leads you " << endl;
+            cout << "to their den.''" << endl;
+            cout << "" << endl;
+            cout << "Do you choose to go ''right'' or ''left''?" << endl;
+            cout << "" << endl;
+
+            do {
+                    getline(cin, choice1);
+                    cout << "" << endl;
+
+                        if (cin.fail())
+                        {
+                            cout << "System Error. Please try again." << endl;
+                            cout << "" << endl;
+                        }
+                        else if (choice1 == "right")
+                        {
+
+                            string choice2;
+
+                            cout << "You have made the RIGHT choice." << endl;
+                            cout << "" << endl;
+                            cout << "You now come to a cliff face. There is climbing gear at the bottom of the cliff." << endl;
+                            cout << "" << endl;
+                            cout << "Will you ''climb'' the cliff or will you attempt to find your way ''around''?" << endl;
+                            cout << "" << endl;
+
+                                do
+                                {
+                                    getline(cin, choice2);
+                                    cout << "" << endl;
+
+                                    if (cin.fail())
+                                    {
+                                        cout << "System Error. Please try again." << endl;
+                                        cout << "" << endl;
+                                    }
+                                    else if (choice2 == "climb")
+                                    {
+                                        cout << "The slate rock making up the cliff face has broken and so have your bones." << endl;
+                                    }
+                                    else if (choice2 == "around")
+                                    {
+                                        cout << "Your sense of safety has payed dividends. You find safety at the village at the backside of the cliff." << endl;
+                                    }
+                                    else
+                                    {
+                                        cout << "Please enter ''climb'' or ''around'' to make your choice." << endl;
+                                        cout << "" << endl;
+                                    }
+
+                                } while (choice2 != "climb" && choice2 != "around");
+                        }
+                        else if (choice1 == "left")
+                        {
+                            cout << "You've been LEFT to fend for yourself, and the swamp monsters have lacked for food. Good Luck." << endl;
+                            cout << "" << endl;
+                        }
+                        else
+                        {
+                            cout << "Please enter ''right'' or ''left'' to make your choice." << endl;
+                            cout << "" << endl;
+                        }
+
+
+            } while (choice1 != "right" && choice1 != "left");
+}
+
+void question4()
+{
+    cout << "Question 4: Math Practice Program" << endl;
+    cout << "" << endl;
+
+    // Random number generator (find in the gambling dice program)
+
+
 }
