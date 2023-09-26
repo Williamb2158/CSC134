@@ -268,7 +268,49 @@ void question4()
     cout << "Question 4: Math Practice Program" << endl;
     cout << "" << endl;
 
-    // Random number generator (find in the gambling dice program)
+    // Random number generator (found in the gambling dice program)
+        srand((unsigned) time(0));
 
+        int randomNumber1;
+        int randomNumber2;
+
+        for (int index = 0; index < 10; index++)
+            {
+            randomNumber1 = (rand() % 9) + 1;
+            randomNumber2 = (rand() % 9) + 1;
+            }
+    // End random number generator
+
+    //User answer integer and actual answer:
+
+    int actualAnswer = randomNumber1 + randomNumber2;
+    int userAnswer;
+
+    cout << randomNumber1 << "+" << randomNumber2 << "=" << endl;
+    cout << "" << endl;
+
+    cout << "Please enter the answer below: " << endl;
+    cout << "" << endl;
+
+    do
+    {
+        cin >> userAnswer;
+
+        if (cin.fail())
+        {
+            cout << "System Error: Please try again." << endl;
+            cout << "" << endl;
+        }
+        else if (userAnswer == actualAnswer)
+        {
+            cout << "Great Job! You got the correct answer." << endl;
+        }
+        else
+        {
+            cout << "Sorry, that is incorrect. Please try again." << endl;
+            cout << "" << endl;
+        }
+
+    } while (userAnswer != actualAnswer);
 
 }

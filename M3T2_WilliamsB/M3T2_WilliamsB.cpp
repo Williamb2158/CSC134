@@ -35,58 +35,6 @@ Brian M. Williams
 */
 
 int main(){
-/*
-    cout << "Dice Roller" << endl;
-
-
-// Declare the variables for the die:
-
-    int die1, die2, diceTotal;
-
-    //roll is 2d6 (two 6-sided die)
-
-// End variable declaration.
-
-//Ask for dice rolls
-
-    cout << "What was your first dice roll?" << endl;
-    cout << "" << endl;
-    cin >> die1;
-    cout << "" << endl;
-
-    cout << "What was your second dice roll?" << endl;
-    cout << "" << endl;
-    cin >> die2;
-    cout << "" << endl;
-
-// Add the dice rolls:
-
-    diceTotal = die1 + die2;
-
-// End dice roll addition.
-
-    cout << "You rolled: " << diceTotal << endl;
-
-// if statements for wins and losses
-
-    if (diceTotal == 7 || diceTotal == 11) {
-
-        cout << "You are a winner!" << endl;
-
-    }
-        else if (diceTotal == 2 || diceTotal == 3 || diceTotal == 12 ){
-
-            cout << "The house takes the win." << endl;
-
-        }
-            else {
-
-                cout << "Push. Please play again." << endl;
-
-            }
-
-*/
-// Random number dice roller:
 
     cout << "Random Dice Roller." << endl;
      cout << "" << endl;
