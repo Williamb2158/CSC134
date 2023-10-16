@@ -1,0 +1,13 @@
+# Notes for Fall Game Jam
+
+Will be asking "Robot" (ChatGPT/etc...) to help create a program
+
+# The rules
+Your sumbiission is due by Halloween.
+It must include one of the following:
+ - Spooky Thing
+ - Fall Thing
+ - Football
+Feel free to do anything.
+
+Will be making an arduino LED blink to the beat of the "Halloween" theme song.
